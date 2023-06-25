@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 100%;
+}
+
+p {
+  color: #817e7e;
+  line-height: 2rem;
+  font-size: 1.6rem;
+}
+
+.container-fluid {
+  margin-top: 30px;
+} 
+/*Logo*/
+.navbar-brand {
+  margin-left: 70px;
+  padding: 5px;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  padding-right: 200px;
+}
+
+/*hover*/ 
+.navbar div ul li a:hover {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  background-size: 100% 2px;
+ }
+
+.nav-link {
+  margin-right: 40px;
+  font-size:medium ;
+  font-weight: 200;
+  color:#ffffff;
+  display: block;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+} */ 
+
+/*Carousel*/
+.carousel-item img {
+  object-fit: cover;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.carousel-indicators [data-bs-target]{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fafafa;
+}
+
+.carousel-indicators .active {
+  width: 10px;
+  height: 10px;
+  background-color: #0b0b0b;
+
+}
+
+
+h5{
+  display: inline-block;
+  writing-mode: vertical-lr; /* "lr" indica la dirección del texto: de izquierda a derecha */
+  text-align: left;
+  transform: rotate(-180deg); /* Invierte el texto para comenzar desde abajo */
+} 
+
+.dropdown-menu li a {
+  color: #817e7e;
+  font-size: 1.2rem;
+  text-decoration: none;
+  background-image: linear-gradient(violet, violet);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size .3s; 
+} 
+
+.span navbar-toggler-icon {
+  color:#bd5ef3 
+}

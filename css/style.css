@@ -6,8 +6,8 @@
 h1,
 h2,
 h3 {
-  color: #bd5ef3;
-  font-family: "Quintessential", cursive;
+  color: #000000;
+  font-family: "Quintessential", sans-serif;
 }
 
 p {
@@ -118,4 +118,54 @@ h5 {
     height: 60px;
     right: -15px;
   }
+}
+
+.gallery {
+  font-size: 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.row img{
+  display: flex;
+  justify-content: space-between;
+  max-width: 30%;
+  margin-bottom: 10px;
+}
+
+.text-paragraph {
+  display: flex;
+
+}
+
+form {
+  max-width: 400px; 
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+}
+
+textarea {
+  height: 150px; 
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
 }

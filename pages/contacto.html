@@ -46,7 +46,7 @@
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item" href="../pages/book15.html">Books 15 años</a></li>
                                     <li><a class="dropdown-item" href="../pages/cumple.html">Cumpleaños</a></li>
-                                    <li><a class="dropdown-item" href="../pages/casamientos.html">Casamientos</a></li>
+                                    <li><a class="dropdown-item" href="#">Casamientos</a></li>
                                     <li><a class="dropdown-item" href="#">Maternidad</a></li>
                                     <li><a class="dropdown-item" href="#">Deportes</a></li>
                                     <li><a class="dropdown-item" href="#">Eventos</a></li>
@@ -65,51 +65,27 @@
             </nav>
             <!--ends Navbar-->
             <header class="encabezado" id="header">
-                <img src="/img/foto-portada-15.webp" alt="foto portada 15 años" class="encabezado__img--fluid">
+                <img src="/img/contacto-foto-portada.webp" alt="foto portada contacto" class="encabezado__img--fluid">
             </header>
             <!-- ends header -->
             <main>
                 <div>
-                    <h1>BOOK 15 AÑOS</h1>
+                    <h1>CONTACTO</h1>
+                    <h2>Si tenés alguna consulta no dudes en contactarnos</h2>
                 </div>
-                <span class="text-paragraph">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur labore quidem itaque asperiores ea distinctio nulla expedita dignissimos laboriosam animi iusto, quasi unde et possimus vero id ab aut modi.
-                    Perspiciatis aspernatur ducimus minima quaerat in quis repudiandae dignissimos error omnis ut facilis, sapiente, temporibus earum, minus quia architecto repellat illum quas. Earum, beatae? Temporibus doloribus fuga adipisci tempora quae.
-                    Doloremque mollitia odio consectetur hic nihil animi dicta similique, atque assumenda itaque, enim nulla repudiandae distinctio quod est dignissimos nobis eligendi ullam. Quidem unde sint expedita saepe molestias repellendus officia.
-                    </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis repellat aliquid temporibus mollitia ab! Voluptatibus, voluptates quae. Totam eveniet corrupti maiores provident, quia nobis commodi soluta molestias! Veritatis, eum eveniet?
-                    Temporibus quisquam sapiente iure quibusdam, iusto, natus beatae ea aliquid quasi tempora asperiores ex repellendus totam aperiam fugit quia quo reprehenderit non suscipit laudantium mollitia, veritatis adipisci ab. Illo, optio!
-                    Fugit doloremque recusandae aspernatur veniam, ab illum neque, assumenda, doloribus voluptates possimus iusto! Facilis ipsum rerum, quidem impedit debitis doloribus voluptatem ratione officiis velit, magnam, eaque iusto officia odio error.
-                    </p>
-                </span>
-                <div class="gallery">FOTOS
-                    <div class="row">
-                      <img src="foto1.jpg" alt="Foto 1">
-                      <img src="foto2.jpg" alt="Foto 2">
-                      <img src="foto3.jpg" alt="Foto 3">
-                    </div>
-                    <div class="row">
-                      <img src="foto4.jpg" alt="Foto 4">
-                      <img src="foto5.jpg" alt="Foto 5">
-                      <img src="foto6.jpg" alt="Foto 6">
-                    </div>
-                    <div class="row">
-                      <img src="foto7.jpg" alt="Foto 7">
-                      <img src="foto8.jpg" alt="Foto 8">
-                      <img src="foto9.jpg" alt="Foto 9">
-                    </div>
-                    <div class="row">
-                      <img src="foto10.jpg" alt="Foto 10">
-                      <img src="foto11.jpg" alt="Foto 11">
-                      <img src="foto12.jpg" alt="Foto 12">
-                    </div>
-                    <div class="row">
-                      <img src="foto13.jpg" alt="Foto 13">
-                      <img src="foto14.jpg" alt="Foto 14">
-                      <img src="foto15.jpg" alt="Foto 15">
-                    </div>
-                  </div>
-                          
+                <form action="enviar.php" method="POST">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                
+                    <label for="mensaje">Dejanos tu Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" required></textarea>
+                
+                    <button type="submit">Enviar</button>
+                  </form>
+               
             </main>
             <!-- script bootstrap -->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"

@@ -22,6 +22,9 @@ p {
 .dropdown-menu li a {
   color: #817e7e;
 }
+.dropdown-item{
+  color: #000000 !important;
+}
 
 .navbar-brand {
   margin: 0;

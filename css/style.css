@@ -10,19 +10,21 @@ h1,
 h2,
 h3 {
   color: #000000;
-
 }
 
 p {
   color: #000000;
   font-size: 20px;
   text-align: justify;
+  text-align-last: justify;
+  padding: 2px;
+  overflow: hidden;
 }
 
 .dropdown-menu li a {
   color: #817e7e;
 }
-.dropdown-item{
+.dropdown-item {
   color: #000000 !important;
 }
 
@@ -33,7 +35,7 @@ p {
 }
 
 .navbar {
-  /*position: fixed;*/
+  position: absolute;
   top: 0;
   font-weight: 400;
   font-size: 24px;
@@ -87,14 +89,17 @@ p {
 }
 
 h5 {
-  display: inline-block;
-  writing-mode: vertical-lr;
-  text-align: left;
-  font-size: 1.5rem;
-  left: 10px;
-  top: 50px;
-  transform-origin: left top;
-  transform: translateY(-138%) translateX(-2500%) rotate(-180deg);
+  writing-mode: vertical-lr; /* "lr" indica la dirección del texto: de izquierda a derecha */
+  transform: rotate(-180deg); /* Invierte el texto para comenzar desde abajo */
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 330px;
+  margin-left: -95px !important;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  h5 {
+    font-size: 18px;
+  }
 }
 
 .carousel-control-next-icon {
@@ -126,19 +131,6 @@ h5 {
   }
 }
 
-/* .gallery {
-  font-size: 40px;
-  max-width: 900px;
-  margin: 0 auto;
-} */
-
-/* .row img{
-  display: flex;
-  justify-content: space-between;
-  max-width: 30%;
-  margin-bottom: 10px;
-} */
-
 form {
   max-width: 400px;
   margin: 0 auto;
@@ -160,60 +152,184 @@ textarea {
   height: 150px;
 }
 
-button {
-  padding: 10px 20px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 4px;
-  padding-left: 97px;
-
-}
-
-.gallery img {
-  border-radius: 10px;
-  padding: 1px;
-  max-width: 100%;
-  height: auto;
-}
-/* 
-.gallery {
-  column-count: 3;
-  column-gap: 10px;
-}
-
-.gallery img {
-  width: 100%;
-  height: auto;
-  border-radius: 5px;
-  padding: 3px;
-  margin-bottom: 10px;
-} */
 
 .text {
   font-size: 128px;
   font-weight: 900;
-  transform: translateY(-142px);
-  
+  transform: translateY(-206px);
+  margin-left: -8px;
+  margin-top: -145px !important;
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .text {
+    font-size: 48px;
+  }
 }
 
 .text_gallery {
   font-size: 40px;
   font-weight: 900;
   padding-left: 97px;
-  color: #D7649D;
+  margin-top: 90px;
+  color: #d7649d;
+}
+
+/*Botón Volver atrás*/
+.up_down {
+  font-weight: bold;
+  cursor: pointer;
+  transform: translateX(45px) !important;
+  transform: translateY(-166px) !important;
+  margin-left: 104px;
+  margin-bottom: 185px;
 }
 
 #Book15 {
+  column-count: 3; /* Divide el contenido en 3 columnas */
+  column-gap: 20px; /* Espacio entre las columnas (opcional) */
+  padding-left: 97px;
+  padding-right: 97px;
+  margin-top: -195px;
+}
+
+.column {
+  break-inside: avoid; /* Evita que el párrafo se divida en varias columnas */
+  font-size: 20px;
+  text-align-last: left;
+}
+
+.grid-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  column-gap: 30px;
+  grid-template-rows: 3fr 2fr 1fr 2fr 3fr 2fr 3fr 2fr 3fr 3fr;
+  margin-top: 35px;
   padding-left: 97px;
-  margin-top: -120px;
+  padding-right: 97px;
+  gap: 10px;
+  grid-template-areas:
+    "foto1 foto2 foto3"
+    "foto4 foto2 foto6"
+    "foto4 foto5 foto6"
+    "foto7 foto5 foto6"
+    "foto7 foto8 foto9"
+    "foto10 foto8 foto12"
+    "foto10 foto11 foto12"
+    "foto13 foto11 foto12"
+    "foto13 foto14 foto15"
+    "foto13 foto14 foto15";
+}
+
+.grid-container > div {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.grid-container > div > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.container-Foto1 {
+  grid-area: foto1;
+}
+
+.container-Foto2 {
+  grid-area: foto2;
+}
+
+.container-Foto3 {
+  grid-area: foto3;
+}
+
+.container-Foto4 {
+  grid-area: foto4;
+}
+
+.container-Foto5 {
+  grid-area: foto5;
+}
+
+.container-Foto6 {
+  grid-area: foto6;
+}
+.container-Foto7 {
+  grid-area: foto7;
+}
+.container-Foto8 {
+  grid-area: foto8;
+}
+.container-Foto9 {
+  grid-area: foto9;
+}
+.container-Foto10 {
+  grid-area: foto10;
+}
+.container-Foto11 {
+  grid-area: foto11;
+}
+.container-Foto12 {
+  grid-area: foto12;
+}
+.container-Foto13 {
+  grid-area: foto13;
+  grid-row-start: 8;
+  grid-row-end: 10;
+}
+.container-Foto14 {
+  grid-area: foto14;
+}
+.container-Foto15 {
+  grid-area: foto15;
+  grid-row-start: 9;
+  grid-row-end: 10;
+}
+
+/*Formulario de Contacto*/
+.form-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+
+.form-column {
+  flex: 1;
+  padding: 5px;
+}
+
+/* Estilos para los campos de entrada */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 756px;
+  height: 281px;
+}
+
+/* Estilos para el botón de enviar */
+.submit-button {
+  display: block;
+  padding: 10px;
+  background-color: #d7649d;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#cabecera_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #d7649d;
 }

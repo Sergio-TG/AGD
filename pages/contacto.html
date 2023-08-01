@@ -65,27 +65,53 @@
             </nav>
             <!--ends Navbar-->
             <header class="encabezado" id="header">
-                <img src="../img/contacto-foto-portada.webp" alt="foto portada contacto" class="encabezado__img--fluid">
+                <img src="../img/contacto-foto-portada.webp" alt="foto portada contacto" class="img-fluid">
             </header>
             <!-- ends header -->
             <main>
                 <div>
-                    <h1>CONTACTO</h1>
-                    <h2>Si tenés alguna consulta no dudes en contactarnos</h2>
+                    <a href="../index.html#up">
+                        <!-- Seo -->
+                        <img src="../img/boton_volver.svg"
+                            alt="Icono atrás, si accedo me dirijo al inicio de mi página actual" class="up_down">
+                    </a>
                 </div>
-                <form action="enviar.php" method="POST">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" id="nombre" name="nombre" required>
-                
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-                
-                    <label for="mensaje">Dejanos tu Mensaje:</label>
-                    <textarea id="mensaje" name="mensaje" required></textarea>
-                
-                    <button type="submit">Enviar</button>
-                  </form>
-               
+                <div class="text">
+                    CONTACTO
+                </div>
+                <h1 id="cabecera_form">¡Dejanos tus datos!</h1>
+                <form action="#" method="post">
+                    <div class="form-row">
+                        <div class="form-column">
+                            <label for="tipo-evento">Tipo de Evento:</label>
+                            <input type="text" id="tipo-evento" name="tipo-evento" required>
+                        </div>
+                        <div class="form-column">
+                            <label for="fecha-evento">Fecha de Evento:</label>
+                            <input type="date" id="fecha-evento" name="fecha-evento" required>
+                        </div>
+                    </div>
+            
+                    <div class="form-row">
+                        <div class="form-column">
+                            <label for="nombre-apellido">Nombre y Apellido:</label>
+                            <input type="text" id="nombre-apellido" name="nombre-apellido" required>
+                        </div>
+                        <div class="form-column">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+            
+                    <div class="form-row">
+                        <div class="form-column">
+                            <label for="mensaje"></label>
+                            <textarea id="mensaje" name="mensaje" required>Dejanos tu mensaje</textarea>
+                        </div>
+                    </div>
+            
+                    <button type="submit" class="submit-button">ENVIAR MENSAJE</button>
+                </form>
             </main>
             <!-- script bootstrap -->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"

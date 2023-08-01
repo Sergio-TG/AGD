@@ -333,3 +333,6 @@ textarea {
   align-items: center;
   color: #d7649d;
 }
+.img-portada{
+  width: 100% !important;
+}

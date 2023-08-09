@@ -17,6 +17,7 @@
     <!-- Mi CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>AGD Producciones</title>
 </head>
 
@@ -63,7 +64,7 @@
                 </div>
             </nav>
             <!--ends Navbar-->
-            <header class="encabezado" id="header">
+            <header class="wow animate__fadeInDown" data-wow-duration="3s" data-wow-iteration="1" id="header">
                 <img src="../img/foto-portada-15.webp" alt="foto portada 15 años" class="img-fluid img-portada">
             </header>
             <!-- ends header -->
@@ -75,9 +76,11 @@
                             alt="Icono atrás, si accedo me dirijo al inicio de mi página actual" class="up_down">
                     </a>
                 </div>
+                <div class="wow animate__fadeInLeft" data-wow-duration="3s" data-wow-iteration="1">
                 <div class="text">
                     BOOK 15 AÑOS
                 </div>
+            </div>
                 <div class="container-fluid" id="Book15">
                     <p class="column">
                         En AGD Producciones nos especializamos en fiestas de 15 años y capturamos cada momento mágico de tu
@@ -127,7 +130,10 @@
                 crossorigin="anonymous">
                 </script>
             <!-- script Animaciones -->
-
+            <script src="../js/wow.min.js"></script>
+            <script>
+                new WOW().init();
+            </script>
 </body>
 
 </html>

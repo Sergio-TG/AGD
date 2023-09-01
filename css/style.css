@@ -152,7 +152,6 @@ textarea {
   height: 150px;
 }
 
-
 .text {
   font-size: 128px;
   font-weight: 900;
@@ -172,17 +171,6 @@ textarea {
   padding-left: 97px;
   margin-top: 90px;
   color: #d7649d;
-}
-
-.text-quienes {
-  font-size: 40px;
-  font-weight: 600;
-  font: bold;
-  color: #d7649d;
-  text-align: justify;
-  orphans: 1;
-  widows: 1;
-  margin: 0
 }
 
 
@@ -387,4 +375,21 @@ textarea {
 .redSocial {
   text-align: center;
   margin-right: 10px;
+}
+
+
+
+#quienes{
+  column-count: 2;
+  column-gap: 100px; 
+  padding-left: 300px;
+  padding-right: 300px;
+  margin-top: -180px;
+}
+
+.text-quienes {
+  font-size: 40px;
+  font-weight: 700;
+  font: bold;
+  color: #d7649d;
 }

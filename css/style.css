@@ -174,6 +174,18 @@ textarea {
   color: #d7649d;
 }
 
+.text-quienes {
+  font-size: 40px;
+  font-weight: 600;
+  font: bold;
+  color: #d7649d;
+  text-align: justify;
+  orphans: 1;
+  widows: 1;
+  margin: 0
+}
+
+
 /*Botón Volver atrás*/
 .up_down {
   font-weight: bold;
@@ -184,7 +196,7 @@ textarea {
   margin-bottom: 185px;
 }
 
-#Book15 {
+* #Book15 {
   column-count: 3; /* Divide el contenido en 3 columnas */
   column-gap: 20px; /* Espacio entre las columnas (opcional) */
   padding-left: 97px;
@@ -195,8 +207,8 @@ textarea {
 .column {
   break-inside: avoid; /* Evita que el párrafo se divida en varias columnas */
   font-size: 20px;
-  text-align-last: left;
-}
+  text-align-last: justify;
+} 
 
 .grid-container {
   display: grid;

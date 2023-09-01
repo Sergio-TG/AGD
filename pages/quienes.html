@@ -17,6 +17,7 @@
     <!-- Mi CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>AGD Producciones</title>
 </head>
 
@@ -39,8 +40,8 @@
                                 <a class="nav-link" href="../index.html">HOME</a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="../index.html" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="../index.html" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     NUESTROS TRABAJOS
                                 </a>
                                 <ul class="dropdown-menu">
@@ -64,32 +65,35 @@
                 </div>
             </nav>
             <!--ends Navbar-->
-            <header class="encabezado" id="header">
-                <img src="../img/foto-portada-quienessomos.webp" alt="foto portada quienes somos" class="img-fluid img-portada">
+            <header class="wow animate__fadeInDown" data-wow-duration="3s" data-wow-iteration="1" id="header">
+                <img src="../img/foto-portada-quienessomos.webp" alt="foto portada quienes somos"
+                    class="img-fluid img-portada">
             </header>
             <!-- ends header -->
             <main>
                 <div>
-                    <h1>BOOK 15 AÑOS</h1>
+                    <a href="../index.html#up">
+                        <!-- Seo -->
+                        <img src="../img/boton_volver.svg"
+                            alt="Icono atrás, si accedo me dirijo al inicio de mi página actual" class="up_down">
+                    </a>
                 </div>
-                <span class="text-paragraph">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur labore quidem itaque asperiores ea distinctio nulla expedita dignissimos laboriosam animi iusto, quasi unde et possimus vero id ab aut modi.
-                    Perspiciatis aspernatur ducimus minima quaerat in quis repudiandae dignissimos error omnis ut facilis, sapiente, temporibus earum, minus quia architecto repellat illum quas. Earum, beatae? Temporibus doloribus fuga adipisci tempora quae.
-                    Doloremque mollitia odio consectetur hic nihil animi dicta similique, atque assumenda itaque, enim nulla repudiandae distinctio quod est dignissimos nobis eligendi ullam. Quidem unde sint expedita saepe molestias repellendus officia.
-                    </p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis repellat aliquid temporibus mollitia ab! Voluptatibus, voluptates quae. Totam eveniet corrupti maiores provident, quia nobis commodi soluta molestias! Veritatis, eum eveniet?
-                    Temporibus quisquam sapiente iure quibusdam, iusto, natus beatae ea aliquid quasi tempora asperiores ex repellendus totam aperiam fugit quia quo reprehenderit non suscipit laudantium mollitia, veritatis adipisci ab. Illo, optio!
-                    Fugit doloremque recusandae aspernatur veniam, ab illum neque, assumenda, doloribus voluptates possimus iusto! Facilis ipsum rerum, quidem impedit debitis doloribus voluptatem ratione officiis velit, magnam, eaque iusto officia odio error.
-                    </p>
-                </span>
-                <div class="gallery">FOTOS
-                    <div class="row">
-                      <img src="foto1.jpg" alt="Foto 1">
-                      <img src="foto2.jpg" alt="Foto 2">
-                      <img src="foto3.jpg" alt="Foto 3">
+                <div class="wow animate__fadeInLeft" data-wow-duration="3s" data-wow-iteration="1">
+                    <div class="text">
+                        QUIENES SOMOS
                     </div>
                 </div>
-                          
+                <div class="container-fluid" id="Book15">
+                    <p class="column">
+                        Ariadna en su propia fiesta de 15 descubrió que quería retratar momentos únicos, que duraran
+                        para siempre. Su hermosa experiencia la llevó a dedicarse a estudiar fotografía.
+                        A sus cortos 18 años decidió crear un emprendimiento llamado <b>AGD Producciones</b>, que se enfoca en
+                        captar momentos especiales e irrepetibles, mediante su enfoque creativo.
+                    </p>
+                    <p class="column">
+                        Así como le pasó a ella, <b>AGD</b> quiere ayudar a que todas las personas que tengan un sueño  puedan materializarlo a través de las imágenes.  
+                    <span class="text-quienes">“¡Transformamos tus sueños en imágenes!”</span>
+                    </div>
             </main>
             <!-- script bootstrap -->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
@@ -97,7 +101,10 @@
                 crossorigin="anonymous">
                 </script>
             <!-- script Animaciones -->
-
+            <script src="../js/wow.min.js"></script>
+            <script>
+                new WOW().init();
+            </script>
 </body>
 
 </html>

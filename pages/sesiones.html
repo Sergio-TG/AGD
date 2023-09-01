@@ -17,6 +17,7 @@
     <!-- Mi CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>AGD Producciones</title>
 </head>
 
@@ -35,10 +36,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto py-2">
                         <li class="nav-item">
-                            <a class="nav-link" href="./index.html">HOME</a>
+                            <a class="nav-link" href="../index.html">HOME</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="./index.html" role="button"
+                            <a class="nav-link dropdown-toggle" href="../index.html" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 NUESTROS TRABAJOS
                             </a>
@@ -63,7 +64,7 @@
             </div>
         </nav>
         <!--ends Navbar-->
-        <header class="encabezado" id="header">
+        <header class="wow animate__fadeInDown" data-wow-duration="3s" data-wow-iteration="1" id="header">
             <img src="../img/foto-portada-sesiones.webp" alt="foto portada 15 años" class="img-fluid img-portada">
         </header>
         <!-- ends header -->
@@ -75,8 +76,10 @@
                         alt="Icono atrás, si accedo me dirijo al inicio de mi página actual" class="up_down">
                 </a>
             </div>
+            <div class="wow animate__fadeInLeft" data-wow-duration="3s" data-wow-iteration="1">
             <div class="text">
                 SESIONES
+            </div>
             </div>
             <div class="container-fluid" id="Book15">
                 <p class="column">
@@ -85,18 +88,18 @@
                     especial para vos, trabajaremos juntos para crear imágenes que te hagan sentir especial.
                     Nuestro equipo de fotógrafos profesionales se esfuerza por capturar la verdadera esencia de cada
                     individuo. Nos tomamos el tiempo para conocerte, escuchar tus ideas y comprender tus deseos. Desde
-                    la elección del lugar y la vestimenta hasta la creación de una atmósfera relajada y cómoda, nos
+                    la elección del lugar y la vestimenta hasta la creación de una atmósfera relajada y cómoda, nos aseguramos
                 </p>
                 <p class="column">
-                    aseguramos de que cada detalle esté cuidadosamente planeado para obtener resultados extraordinarios.
+                    de que cada detalle esté cuidadosamente planeado para obtener resultados extraordinarios.
                     Nuestra pasión por la fotografía se refleja en cada imagen que creamos. Utilizamos técnicas
                     artísticas y un enfoque creativo para resaltar tus mejores rasgos y capturar momentos auténticos. Ya
                     sea que desees una sesión de retratos, fotografías de moda profesional o imágenes que muestren tus
                     intereses y pasatiempos, nos adaptamos a tus necesidades y te brindamos un resultado excepcional.
-                    En nuestra búsqueda por brindarte una experiencia 
+                    En nuestra búsqueda por brindarte una experiencia fotográfica inolvidable, 
                 </p>
                 <p class="column">
-                    fotográfica inolvidable, nos esforzamos por crear
+                    nos esforzamos por crear
                     un ambiente relajado y divertido durante la sesión. Queremos que te diviertas, permitiéndote
                     capturar tu verdadera personalidad y crear imágenes que celebren tu esencia. Estamos comprometidos a
                     entregarte fotografías que superen tus expectativas y que se conviertan en recuerdos valiosos para
@@ -142,7 +145,10 @@
             integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
             </script>
         <!-- script Animaciones -->
-
+        <script src="../js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
 </body>
 
 </html>

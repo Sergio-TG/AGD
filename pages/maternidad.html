@@ -65,7 +65,7 @@
                 </div>
             </nav>
             <!--ends Navbar-->
-            <header class="encabezado" id="header">
+            <header class="wow animate__fadeInDown" data-wow-duration="3s" data-wow-iteration="1" id="header">
                 <img src="../img/foto-portada-maternidad.webp" alt="foto portada maternidad" class="img-fluid img-portada">
             </header>
             <!-- ends header -->
@@ -77,8 +77,10 @@
                             alt="Icono atrás, si accedo me dirijo al inicio de mi página actual" class="up_down">
                     </a>
                 </div>
+                <div class="wow animate__fadeInLeft" data-wow-duration="3s" data-wow-iteration="1">
                 <div class="text">
                     MATERNIDAD
+                </div>
                 </div>
                 <div class="container-fluid" id="Book15">
                     <p class="column">
@@ -125,6 +127,10 @@
                 crossorigin="anonymous">
             </script>
             <!-- script Animaciones -->
+            <script src="../js/wow.min.js"></script>
+            <script>
+                new WOW().init();
+            </script>
 </body>
 
 </html>

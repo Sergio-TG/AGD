@@ -65,8 +65,8 @@
                 </div>
             </nav>
             <!--ends Navbar-->
-            <header class="encabezado" id="header">
-                <img src="../img/foto-portada-cumple.webp" alt="foto portada cumpleaños años" class="img-fluid img-portada">
+            <header class="wow animate__fadeInDown" data-wow-duration="3s" data-wow-iteration="1" id="header">
+              <img src="../img/foto-portada-cumple.webp" alt="foto portada cumpleaños años" class="img-fluid img-portada">
             </header>
             <!-- ends header -->
             <main>
@@ -77,8 +77,10 @@
                             alt="Icono atrás, si accedo me dirijo al inicio de mi página actual" class="up_down">
                     </a>
                 </div>
+                <div class="wow animate__fadeInLeft" data-wow-duration="3s" data-wow-iteration="1">
                 <div class="text">
                     CUMPLEAÑOS
+                </div>
                 </div>
                 <div class="container-fluid" id="Book15">
                     <p class="column">
@@ -89,7 +91,7 @@
                         de tu fiesta. Con un enfoque creativo, trabajamos para capturar la esencia de tu personalidad
                     <p>
                     <p class="column">
-                        y la alegría de tus seres queridos.Ya sea que estés planeando una fiesta íntima o una celebración extravagante, nos 
+                        y la alegría de tus seres queridos. Ya sea que estés planeando una fiesta íntima o una celebración extravagante, nos 
                         adaptamos a tus necesidades y capturamos cada momento con estilo y elegancia.
                         Queremos que disfrutes de tu cumpleaños mientras nosotros nos encargamos de fotografiar los recuerdos más preciados.
                         Por eso,  ofrecemos un servicio profesional y personalizado. Nos reunimos con vos para comprender tus deseos y expectativas.
@@ -126,6 +128,10 @@
                 crossorigin="anonymous">
             </script>
             <!-- script Animaciones -->
+            <script src="../js/wow.min.js"></script>
+            <script>
+                new WOW().init();
+            </script>
 </body>
 
 </html>

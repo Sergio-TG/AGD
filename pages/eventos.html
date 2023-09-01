@@ -17,6 +17,7 @@
     <!-- Mi CSS -->
     <link rel="stylesheet" href="../css/style.css">
     <!-- Animate CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>AGD Producciones</title>
 </head>
 
@@ -35,10 +36,10 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto py-2">
                         <li class="nav-item">
-                            <a class="nav-link" href="./index.html">HOME</a>
+                            <a class="nav-link" href="../index.html">HOME</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="./index.html" role="button"
+                            <a class="nav-link dropdown-toggle" href="../index.html" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
                                 NUESTROS TRABAJOS
                             </a>
@@ -63,7 +64,7 @@
             </div>
         </nav>
         <!--ends Navbar-->
-        <header class="encabezado" id="header">
+        <header class="wow animate__fadeInDown" data-wow-duration="3s" data-wow-iteration="1" id="header">
             <img src="../img/foto-portada-eventos.webp" alt="foto portada 15 años" class="img-fluid img-portada">
         </header>
         <!-- ends header -->
@@ -75,9 +76,11 @@
                         alt="Icono atrás, si accedo me dirijo al inicio de mi página actual" class="up_down">
                 </a>
             </div>
+            <div class="wow animate__fadeInLeft" data-wow-duration="3s" data-wow-iteration="1">
             <div class="text">
                 EVENTOS
             </div>
+        </div>
             <div class="container-fluid" id="Book15">
                 <p class="column">
                     Desde conciertos en vivo hasta fiestas nocturnas, estamos aquí para asegurarnos de que cada imagen
@@ -86,10 +89,10 @@
                     atmósfera electrizante de cada momento. Jugamos con las luces, las sombras y los colores para crear
                     imágenes impactantes que transmitan la energía y la emoción del ambiente. Ya sea que estés
                     disfrutando de la música en primera fila, bailando en medio de una multitud, o celebrando un evento
-                    importante, estaremos allí para 
+                    importante, estaremos allí para capturar esos 
                 </p>
                 <p class="column">
-                    capturar esos momentos fugaces y llenos de pasión.
+                    momentos fugaces y llenos de pasión.
                     Además de nuestra destreza fotográfica, ofrecemos un enfoque profesional y amigable. Nos mezclamos
                     con la multitud, nos sumergimos en el bullicio y nos adaptamos al ritmo de los eventos sociales para
                     capturar los momentos más auténticos. Nuestro objetivo es brindarte imágenes que te hagan revivir la
@@ -141,7 +144,10 @@
             integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
             </script>
         <!-- script Animaciones -->
-
+        <script src="../js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
 </body>
 
 </html>

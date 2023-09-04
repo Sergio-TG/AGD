@@ -393,3 +393,23 @@ textarea {
   font: bold;
   color: #d7649d;
 }
+
+.collage-container{
+  padding: 50px;
+}
+
+.collage{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.img-collage{
+  padding: 10px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.img-collage1{
+  border-radius: 5%
+}

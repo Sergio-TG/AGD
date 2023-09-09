@@ -134,6 +134,7 @@ h5 {
 form {
   max-width: 400px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
 label {
@@ -159,9 +160,23 @@ textarea {
   margin-left: -8px;
   margin-top: -145px !important;
 }
-@media (min-width: 320px) and (max-width: 768px) {
+@media (min-width: 280px) and (max-width: 768px) {
   .text {
     font-size: 48px;
+    font-weight: 900;
+    transform: translateY(-206px);
+    margin-left: -8px;
+    margin-top: -60px !important;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1013px) {
+  .text {
+    font-size: 60px;
+    font-weight: 900;
+    transform: translateY(-206px);
+    margin-left: -8px;
+    margin-top: -60px !important;
   }
 }
 
@@ -184,18 +199,46 @@ textarea {
   margin-bottom: 185px;
 }
 
-* #Book15 {
+#Book15 {
   column-count: 3; /* Divide el contenido en 3 columnas */
   column-gap: 20px; /* Espacio entre las columnas (opcional) */
   padding-left: 97px;
   padding-right: 97px;
   margin-top: -195px;
-}
+} 
 
 .column {
   break-inside: avoid; /* Evita que el párrafo se divida en varias columnas */
   font-size: 20px;
-  text-align-last: justify;
+  text-align: justify;
+} 
+
+
+@media screen and (max-width: 768px) {
+  #column1::after {
+    content: "En AGD Producciones nos especializamos en fiestas de 15 años y capturamos cada momento mágico de tu gran día.";
+    display: block;
+    justify-content: space-evenly;
+    text-align: justify;
+    align-items: stretch;
+   }
+  }
+
+@media screen and (max-width: 768px) {
+  #column1 {
+      display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 9; /* Limita a 9 líneas */
+      justify-content: space-between;
+  }
+
+  .column {
+      display: none; /* Oculta las demás columnas */
+  }
+}
+
+#text-last {
+  text-align-last: left;
 } 
 
 .grid-container {
@@ -294,7 +337,7 @@ textarea {
   align-items: flex-start;
   margin: 10px 0;
   list-style: none;
-}
+}  
 
 .form-column {
   flex: 1;
@@ -316,7 +359,7 @@ input, textarea {
 textarea {
   width: 400px;
   height: 281px;
-}
+} 
 
 /* Estilos para el botón de enviar */
 .submit-button, .contacto_volver {
@@ -335,14 +378,14 @@ textarea {
   justify-content: center;
   align-items: center;
   color: #d7649d;
-}
+} 
 .img-portada{
   width: 100% !important;
 }
 
 .text-contacto {
-  font-size: 60px;
-  font-weight: 800;
+  font-size: 40px;
+  font-weight: 600;
 }
 
 .contact-info {
@@ -359,23 +402,24 @@ textarea {
   font-size: 32px;
   font-weight: 500;
   font: bold;
-}
+} 
 
 .content-container {
-  flex: 1;
+  display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: right;
+  position: relative
 }
 
-.content-container h2 {
+/* .content-container h2 {
   margin-top: 0;
 }
 
 .redSocial {
   text-align: center;
   margin-right: 10px;
-}
+} */
 
 
 

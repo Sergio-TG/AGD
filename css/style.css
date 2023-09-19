@@ -59,12 +59,22 @@ p {
   text-decoration: none;
 }
 
+/*******************************Aplica color blanco al botón hamburguesa*********************************/
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler {
+  border: none;
+}
+
 
 .content-navbar {
   width: 90%;
   display: flex;
   justify-content: space-between;
 }
+
 .carousel-item img {
   object-fit: cover;
   max-height: 100%;
@@ -280,6 +290,18 @@ textarea {
   grid-row-end: 10;
 }
 
+/* .grid-container>div>img{
+  transition: transform 0.5s;
+  width: 100%;
+  height: auto;
+} */
+
+.grid-container>div>img:hover {
+  transition: transform 0.8s;
+  transform: scale(1.2896);
+}
+
+
 /*Formulario de Contacto*/
 
 .form-container {
@@ -371,6 +393,7 @@ textarea {
 
 .contacto-form {
   width: 100%;
+  margin-top: 50px;
 }
 
 .area-contact {
@@ -387,14 +410,6 @@ textarea {
   gap: 30px;
 }
 
-/* 
-.quienes {
-  column-count: 2;
-  column-gap: 100px; 
-  padding-left: 300px;
-  padding-right: 300px;
-  margin-top: -180px;
-} */
 
 .text-quienes {
   font-size: 40px;
@@ -405,6 +420,7 @@ textarea {
 
 .collage-container {
   padding: 50px 10px;
+  
 
 }
 
@@ -418,21 +434,25 @@ textarea {
   padding: 10px;
   padding-bottom: 50px;
   padding-top: 50px;
+  
 }
+
 
 .img-collage1 {
   border-radius: 5%;
 }
 
 .container-quienes {
-  padding-left: 50px;
-  padding-top: 80px;
+  width: 100%;
+
 }
 
 .sub-container-quienes {
-  padding-left: 100px;
-  padding-top: 100px;
+  margin: 0 auto;
+  width: 90%;
 }
+
+
 
 .sub {
   font-size: 40px;
@@ -441,36 +461,35 @@ textarea {
 }
 
 .div-estructura {
-  padding: 20px;
+  width: 100%;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 15px;
 }
 
-.div-texto {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding-left: 30px;
-  padding-right: 200px;
+.social-content {
+width: 20%;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 .texto-p {
   font-size: 30px;
   font-weight: 500;
-  text-align: match-parent;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container-quienes-fotos {
-  padding-left: 50px;
-  padding-top: 80px;
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
+  width: 100%;
 }
 
-.componentes-quienes {
-  padding-right: 80px;
-}
 
 /*******************************************QUIENES SOMOS*********************/
 .description-content {
@@ -482,6 +501,7 @@ textarea {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
+  margin-top: 50px;
 }
 
 .item-a {
@@ -492,8 +512,21 @@ textarea {
   width: 90%;
 }
 
-.area-mensaje {
+.message-contact {
   width: 100%;
+}
+
+.componentes-quienes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33.33333%;
+  list-style-type: none;
+}
+
+.componentes-quienes img {
+  width: 430px;
+
 }
 
 /*************************RESPOSIVE MOBILE****************************/
@@ -502,19 +535,32 @@ textarea {
     margin-left: 15px;
     font-size: 25px;
   }
-   .navbar {
+
+  .navbar {
     padding-top: 20px;
-   }
+  }
 
 
   .navbar-brand img {
-   width: 80px;
+    width: 80px;
   }
 
+  .navbar-nav {
+    background-color: #817e7e;
+    border-radius: 30px;
+    padding: 20px;
+    position: absolute;
+    left: 0;
+  }
+
+  .dropdown-toggle {
+    background-color: #817e7e;
+  }
+  
   .up_down {
     position: absolute;
     left: 20px;
-    top: 80px; 
+    top: 80px;
   }
 
   .content-container {
@@ -556,7 +602,6 @@ textarea {
     bottom: -13px;
 
   }
-
   #column1,
   #column2 {
     display: none;
@@ -580,10 +625,36 @@ textarea {
 
   .text_gallery {
     margin-top: 0px;
-   
+
   }
 
+  .componentes-quienes {
+    width: 100%;
+    padding-top: 25px;
+  }
+
+  .componentes-quienes img {
+    width: 300px;
+  }
+
+  .div-estructura {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 15px;
+  }
   
+  .social-content {
+  width: 100%;
+  }
+  
+  .texto-p {
+    width: 100%;
+    padding: 0 20px;
+ 
+  }
+
+
 }
 
 
@@ -592,7 +663,13 @@ textarea {
   .text {
     font-size: 60px;
     font-weight: 900;
-    bottom: 0;
+    bottom: -26px;
+  }
+
+  .up_down {
+    position: absolute;
+    left: 40px;
+    top: 180px;
   }
 
   .column-text {
@@ -610,6 +687,7 @@ textarea {
     display: none;
 
   }
+
   .btn-whatsapp {
     right: 5vw;
   }
@@ -617,33 +695,44 @@ textarea {
   h5 {
     margin-left: 35px;
   }
+
+  .content-container {
+    padding-left: 30px;
+  }
 }
 
 @media (min-width: 1025px) {
-.book-description-container {
-  display: flex;
-  max-width: 1025px;
-  margin: 0 auto;
-  margin-top: 50px;
-  gap: 20px;
+  .book-description-container {
+    display: flex;
+    max-width: 1025px;
+    margin: 0 auto;
+    margin-top: 50px;
+    gap: 20px;
+  }
+
+  .column-text {
+    width: calc(1025px / 3 - 40px);
+    text-align-last: left;
+  }
+
+  .text-last {
+    text-align-last: left;
+  }
+
+  .column-text-tablet {
+    display: none;
+  }
+
+
 }
 
-.column-text {
-  width: calc(1025px / 3 - 40px);
-  text-align-last: left;
-}
-
-.text-last {
-  text-align-last: left;
-}
-
-.column-text-tablet {
-  display: none;
-}
-
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .up_down {
+    left: 80px;
+    top: 300px;
+  }
 
 }
-
 
 /*************************RESPOSIVE DESKTOP PANTALLAS GRANDES****************************/
 @media (min-width: 1440px) and (max-width: 1920px) {

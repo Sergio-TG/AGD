@@ -22,10 +22,16 @@
 </head>
 
 <body>
-    <div class="headerContainer">
+    <header class="header-content">
+        <div class="wow animate__fadeInDown" data-wow-duration="3s" data-wow-iteration="1" id="header">
+            <img src="../img/contacto-foto-portada.webp" alt="foto portada contacto" class="img-fluid img-portada">
+        </div>
+        <div class="wow animate__fadeInLeft text" data-wow-duration="3s" data-wow-iteration="1">
+            CONTACTO
+        </div>
         <!--Navbar-->
         <nav class="navbar navbar-expand-lg navbar-light fixed-top bgColorNav">
-            <div class="container-fluid">
+            <div class="content-navbar">
                 <a class="navbar-brand textColorWhite" href="../index.html">
                     <img src="../img/logo_agd.svg" alt="Logo AGD Producciones">
                 </a>
@@ -63,23 +69,14 @@
                 </div>
             </div>
         </nav>
-        <!--ends Navbar-->
-        <header class="wow animate__fadeInDown" data-wow-duration="3s" data-wow-iteration="1" id="header">
-            <img src="../img/contacto-foto-portada.webp" alt="foto portada contacto" class="img-fluid img-portada">
-        </header>
-        <!-- ends header -->
-    </div>
-    <main>
-        <a href="../index.html#up">
+        <a href="../index.html#up" class="up_down">
             <!-- Seo -->
-            <img src="../img/boton_volver.svg" alt="Icono atrás, si accedo me dirijo al inicio de mi página actual"
-                class="up_down">
+            <img src="../img/boton_volver.svg" alt="Icono atrás, si accedo me dirijo al inicio de mi página actual">
         </a>
-        <div class="wow animate__fadeInLeft" data-wow-duration="3s" data-wow-iteration="1">
-            <div class="text">
-                CONTACTO
-            </div>
-        </div>
+        <!--ends Navbar-->
+    </header>
+    <!-- ends header -->
+    <main>
         <section class="contacto-form">
             <div class="area-contact">
                 <h2 class="text-contacto">Si tenés alguna consulta no dudes en contactarnos</h2>
@@ -103,7 +100,7 @@
                         </div>
                         <div class="area-mensaje">
                             <label for="mensaje">Mensaje:</label>
-                            <textarea id="mensaje" name="mensaje" required>Dejanos tu mensaje</textarea>
+                            <textarea class="message-contact" id="mensaje" name="mensaje" required>Dejanos tu mensaje</textarea>
                         </div>
                         <button type="submit" class="submit-button">ENVIAR MENSAJE</button>
                     </form>

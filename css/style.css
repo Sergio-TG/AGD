@@ -536,7 +536,7 @@ align-items: center;
     font-size: 25px;
   }
 
-  .navbar {
+    .navbar {
     padding-top: 20px;
   }
 
@@ -546,7 +546,7 @@ align-items: center;
   }
 
   .navbar-nav {
-    background-color: #817e7e;
+    background-color: #D7649D;
     border-radius: 30px;
     padding: 20px;
     position: absolute;
@@ -554,7 +554,7 @@ align-items: center;
   }
 
   .dropdown-toggle {
-    background-color: #817e7e;
+    background-color: #D7649D;
   }
   
   .up_down {
@@ -635,6 +635,7 @@ align-items: center;
 
   .componentes-quienes img {
     width: 300px;
+    top: 20px;
   }
 
   .div-estructura {
@@ -654,12 +655,29 @@ align-items: center;
  
   }
 
+  .sub {
+    font-size: 28px;
+   text-align: center;
+  }
 
 }
 
 
 /*************************RESPOSIVE TABLET****************************/
 @media (min-width: 768px) and (max-width: 1024px) {
+
+  .navbar-nav {
+    background-color: #D7649D;
+    border-radius: 30px;
+    padding: 20px;
+    position: center;
+    left: 0;
+  }
+
+  .dropdown-toggle {
+    background-color: #D7649D;
+  }
+
   .text {
     font-size: 60px;
     font-weight: 900;
@@ -699,6 +717,39 @@ align-items: center;
   .content-container {
     padding-left: 30px;
   }
+
+
+  .componentes-quienes {
+    width: 100%;
+    padding-top: 25px;
+  }
+
+  .componentes-quienes img {
+    width: 300px;
+    top: 25px;
+  }
+
+  .div-estructura {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 15px;
+  }
+  
+  .social-content {
+  width: 100%;
+  }
+  
+  .texto-p {
+    width: 100%;
+    padding: 0 20px;
+ 
+  }
+  .sub {
+    text-align: center;
+  }
+
+
 }
 
 @media (min-width: 1025px) {

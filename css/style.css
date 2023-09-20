@@ -20,14 +20,22 @@ p {
   padding: 2px;
 }
 
+.main-content {
+  margin-bottom: 50px;
+}
 .dropdown-menu li a {
   color: #817e7e;
 }
 
 .dropdown-item {
   color: #000000 !important;
+  
 }
 
+.dropdown-item:hover {
+  color: #d7649d !important;
+  
+}
 .navbar-brand {
   margin: 0;
 }
@@ -197,8 +205,7 @@ textarea {
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 3fr 2fr 1fr 2fr 3fr 2fr 3fr 2fr 3fr 3fr;
   margin-top: 35px;
-  padding-left: 97px;
-  padding-right: 97px;
+  padding: 0 97px;
   gap: 10px;
   grid-template-areas:
     "foto1 foto2 foto3"
@@ -290,11 +297,7 @@ textarea {
   grid-row-end: 10;
 }
 
-/* .grid-container>div>img{
-  transition: transform 0.5s;
-  width: 100%;
-  height: auto;
-} */
+
 
 .grid-container>div>img:hover {
   transition: transform 0.8s;
@@ -314,13 +317,6 @@ textarea {
 .form-agd {
   width: 50%;
 }
-
-/* .form-row {
-  flex-wrap: wrap;
-  align-items: flex-start;
-  margin: 10px 0;
-  list-style: none;
-}   */
 
 .form-column {
   padding: 5px;
@@ -452,6 +448,9 @@ textarea {
   width: 90%;
 }
 
+.sub-container-clientes {
+  margin-top: 50px;
+}
 
 
 .sub {
@@ -607,6 +606,14 @@ align-items: center;
     display: none;
   }
 
+  .grid-container {
+     padding: 0 20px;
+  }
+
+  .grid-container>div {
+    border-radius: 5px;
+
+  }
   .btn-whatsapp {
     color: #fff;
     position: fixed;
@@ -782,7 +789,14 @@ align-items: center;
     left: 80px;
     top: 300px;
   }
+  .img-laptop {
+    display: none;
+  }
 
+  .text {
+    font-size: 90px;
+    bottom: -35px;
+  }
 }
 
 /*************************RESPOSIVE DESKTOP PANTALLAS GRANDES****************************/
@@ -799,4 +813,6 @@ align-items: center;
     width: calc(1366px / 3 - 60px);
     text-align-last: left;
   }
+
+  
 }

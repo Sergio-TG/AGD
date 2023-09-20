@@ -23,19 +23,21 @@ p {
 .main-content {
   margin-bottom: 50px;
 }
+
 .dropdown-menu li a {
   color: #817e7e;
 }
 
 .dropdown-item {
   color: #000000 !important;
-  
+
 }
 
 .dropdown-item:hover {
   color: #d7649d !important;
-  
+
 }
+
 .navbar-brand {
   margin: 0;
 }
@@ -416,7 +418,7 @@ textarea {
 
 .collage-container {
   padding: 50px 10px;
-  
+
 
 }
 
@@ -430,7 +432,7 @@ textarea {
   padding: 10px;
   padding-bottom: 50px;
   padding-top: 50px;
-  
+
 }
 
 
@@ -467,10 +469,10 @@ textarea {
 }
 
 .social-content {
-width: 20%;
-display: flex;
-justify-content: center;
-align-items: center;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .texto-p {
@@ -535,10 +537,9 @@ align-items: center;
     font-size: 25px;
   }
 
-    .navbar {
+  .navbar {
     padding-top: 20px;
   }
-
 
   .navbar-brand img {
     width: 80px;
@@ -555,7 +556,7 @@ align-items: center;
   .dropdown-toggle {
     background-color: #D7649D;
   }
-  
+
   .up_down {
     position: absolute;
     left: 20px;
@@ -601,19 +602,21 @@ align-items: center;
     bottom: -13px;
 
   }
+
   #column1,
   #column2 {
     display: none;
   }
 
   .grid-container {
-     padding: 0 20px;
+    padding: 0 20px;
   }
 
   .grid-container>div {
     border-radius: 5px;
 
   }
+
   .btn-whatsapp {
     color: #fff;
     position: fixed;
@@ -651,39 +654,51 @@ align-items: center;
     flex-wrap: wrap;
     padding-top: 15px;
   }
-  
+
   .social-content {
-  width: 100%;
+    width: 100%;
   }
-  
+
   .texto-p {
     width: 100%;
     padding: 0 20px;
- 
+
   }
 
   .sub {
     font-size: 28px;
-   text-align: center;
+    text-align: center;
   }
 
 }
 
 
-/*************************RESPOSIVE TABLET****************************/
+/*************************RESPONSIVE TABLET****************************/
 @media (min-width: 768px) and (max-width: 1024px) {
+
+  .navbar {
+    padding-top: 30px;
+  }
 
   .navbar-nav {
     background-color: #D7649D;
     border-radius: 30px;
     padding: 20px;
-    position: center;
+    position: relative;
     left: 0;
+    top: 15px;
+
+    /* 
+
+    padding: 20px;
+    position: relative;
+    left: 0; */
   }
 
+  /* 
   .dropdown-toggle {
     background-color: #D7649D;
-  }
+  } */
 
   .text {
     font-size: 60px;
@@ -742,23 +757,27 @@ align-items: center;
     flex-wrap: wrap;
     padding-top: 15px;
   }
-  
+
   .social-content {
-  width: 100%;
+    width: 100%;
   }
-  
+
   .texto-p {
     width: 100%;
     padding: 0 20px;
- 
+
   }
+
   .sub {
     text-align: center;
   }
 
-
+  .text-quienes {
+    font-size: 28px;
+  }
 }
 
+/*****************************************RESPONSIVE MACBOOKAIR*******************************************/
 @media (min-width: 1025px) {
   .book-description-container {
     display: flex;
@@ -781,14 +800,39 @@ align-items: center;
     display: none;
   }
 
+  .up_down {
+    position: absolute;
+    left: 40px;
+    top: 180px;
+  }
+
+  .text {
+    font-size: 90px;
+    bottom: -35px;
+  }
 
 }
 
 @media (min-width: 1280px) and (max-width: 1439px) {
+
+  .navbar {
+    padding-top: 10px;
+  }
+
+  .navbar div ul li a {
+    font-size: 20px;
+  }
+
+  h5 {
+    font-size: 30px;
+    margin-left: -80px;
+  }
+
   .up_down {
     left: 80px;
     top: 300px;
   }
+
   .img-laptop {
     display: none;
   }
@@ -814,5 +858,10 @@ align-items: center;
     text-align-last: left;
   }
 
-  
+  .up_down {
+    position: absolute;
+    left: 90px;
+    top: 520px;
+  }
+
 }

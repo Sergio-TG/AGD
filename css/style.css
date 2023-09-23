@@ -357,6 +357,7 @@ textarea {
 
 #cabecera_form {
   color: #d7649d;
+  font-weight: 400;
 }
 
 .img-portada {
@@ -687,18 +688,7 @@ textarea {
     position: relative;
     left: 0;
     top: 15px;
-
-    /* 
-
-    padding: 20px;
-    position: relative;
-    left: 0; */
   }
-
-  /* 
-  .dropdown-toggle {
-    background-color: #D7649D;
-  } */
 
   .text {
     font-size: 60px;
